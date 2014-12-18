@@ -1,0 +1,165 @@
+* { margin: 0; }
+
+html { 
+    color: #000;
+    background-color: #fff;
+    font-family: "Courier New", courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+    font-size: 62.5%; /* This size keeps base 10 so 24px = 2.4em = 2.4rem */
+    font-weight: bold;
+ }
+
+/*@media (max-width:1100px) { body {font-size:2.25rem;} } */
+@media (max-width: 960px) { html {font-size: 47% !important;} } 
+@media (max-width: 640px) { html {font-size: 35% !important;} } 
+@media (max-width: 480px) { html {font-size: 20% !important;} div {width: 90% !important;} .logo {width: 50% !important;} } 
+
+body {
+    /*padding: 50px;*/
+    font-size: 36px;
+    font-size: 3.6rem;
+}
+
+.padding10 {
+    padding-top: 10px;
+}
+
+.logo {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+.red {
+    color: red;
+    /*text-decoration: none;*/
+}
+
+.green {
+    color: #80ff00;
+}
+
+.black {
+    color: black;
+}
+
+.content {
+    margin: 0;
+    padding-left: 4rem;
+}
+
+.sub-content {
+    margin: 0;
+    padding-left: 5rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 3rem;
+
+     /* IE7 and lower */
+    *list-style: disc;
+    *padding: 0 0 0 2em;
+}
+
+ul li:before {
+    content: '.:';
+    margin-right: 0.5rem;
+    font-size: 2.5rem;
+
+    /* IE7 and lower use default */
+    *content: none;
+    *margin: 0;
+}
+
+ul li {
+    text-indent: -0.5em;  
+
+    /* IE7 and lower */
+    *text-indent: 0;
+}
+
+ul ul{
+    /*list-style: none;*/
+    padding-left: 2rem;
+
+     /* IE7 and lower */
+    *list-style: square;
+    *padding: 0 0 0 2em;
+}
+
+
+/*p  { margin-top: 0.5rem; }*/
+
+/*span.subtitle {
+    color: black;
+    text-decoration: none;
+    font-size: 36px; 
+}*/
+
+/*span.warning {
+    border: none;
+    font-size: 10px;
+    font-weight: light;
+}*/
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    padding: 2px;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+}
+
+div {
+    z-index: 1000;
+    width: 70%;
+    margin: 15px auto 15px auto;
+}
+
+div.title {
+    text-align: center;
+    letter-spacing: 7px;
+    letter-spacing: 0.5rem;
+    font-size: 48px; 
+    font-size: 4.8rem; 
+}
+
+div.text {
+    border: 4px solid black;
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+    text-align: justify;
+}
+
+p.title {
+    padding: 5px 5px 5px 15px;
+}
+
+div.footer {
+    text-align: center;
+    letter-spacing: 0.8px;
+    border: none;
+    font-size: 12px; 
+    font-weight: light;
+}
+
+/*
+Por si mas adelante pongo menu lateral:
+-- #primary es el area de contenido ppal
+-- #secondary es el sidebar
+*/
+/* Tablet Landscape */
+/*@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}*/
+
+/* Tabled Portrait */
+/*@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}*/
